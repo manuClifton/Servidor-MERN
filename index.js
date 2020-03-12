@@ -16,7 +16,7 @@ app.use(cors());
 app.use(express.json({ extended: true }));
 
 //crear un puerto al servidor
-const port = process.env.port || 4000;
+const port = process.env.PORT || 4000;
 
 //Importar Rutas
 app.use('/api/usuarios', require('./routes/usuarios'));
